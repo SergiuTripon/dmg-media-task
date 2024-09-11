@@ -1,5 +1,5 @@
 // Select the article body element
-const article = document.querySelector(".single-article");
+const articleBody = document.querySelector(".article-body");
 
 // Define scroll thresholds and state to track which thresholds were reached
 const thresholdsReached = {
@@ -11,7 +11,7 @@ const thresholdsReached = {
 // Function to calculate the scroll depth
 const calculateScrollDepth = () => {
   // Total height of the article
-  const articleHeight = article.scrollHeight;
+  const articleHeight = articleBody.scrollHeight;
   // Height of the user's viewport
   const viewportHeight = window.innerHeight;
   // Scroll position from the top
